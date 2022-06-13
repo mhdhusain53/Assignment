@@ -4,7 +4,7 @@ import axios from "axios";
 const User =()=>{
     const [data,setData]=useState({});
 
-    const UserData = async =>{ axios.get('http://refertest.pythonanywhere.com/user/data',{
+    const UserData = async =>{ axios.get('https://refertest.pythonanywhere.com/user/data',{
             Headers:{
                 "uid": 136
             }

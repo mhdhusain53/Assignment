@@ -4,11 +4,12 @@ import axios from "axios";
 const JobList =()=>{
     const [list,setList]=useState([]);
 
-    const JobData = async =>{ axios.get('http://refertest.pythonanywhere.com/job/openings',{
+    const JobData = async =>{ axios.get('https://refertest.pythonanywhere.com/job/openings',{
             Headers:{
                 "tid": 3441
             }
         }).then(response=>{
+            console.log(response)
             setList(response.data.data);
         });
         
